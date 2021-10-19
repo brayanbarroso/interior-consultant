@@ -1,6 +1,6 @@
 .section {
   margin-block-start: 38px;
-  margin-block-end: 60px;
+  margin-block-end: 120px;
 
   .section-content {
     display: flex;
@@ -54,8 +54,10 @@
 
     .section-decoration {
       .img-interior {
+        z-index: -1;
         img {
           max-inline-size: 100%;
+          height: auto;
         }
       }
     }

@@ -78,7 +78,7 @@ body {
 }
 .section {
   margin-block-start: 38px;
-  margin-block-end: 60px;
+  margin-block-end: 120px;
 }
 .section .section-content {
   display: flex;
@@ -119,8 +119,75 @@ body {
   font-weight: bold;
   margin-inline-start: 15px;
 }
+.section .section-content .section-decoration .img-interior {
+  z-index: -1;
+}
 .section .section-content .section-decoration .img-interior img {
   max-inline-size: 100%;
+  height: auto;
+}
+
+.section-decoration {
+  position: relative;
+}
+.section-decoration .img-user {
+  background: var(--background);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  inset-block-end: -100px;
+  inset-inline-start: 40px;
+  inline-size: 300px;
+  padding-block-end: 25px;
+  position: absolute;
+}
+.section-decoration .img-user .title {
+  display: flex;
+  gap: 14px;
+  margin-inline-start: 22.9px;
+}
+.section-decoration .img-user .title img {
+  border-radius: 50%;
+  margin-block-start: 14px;
+  max-block-size: 36.59px;
+  max-inline-size: 36.59px;
+}
+.section-decoration .img-user .title h4 {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.63px;
+  margin-block-start: 16px;
+}
+.section-decoration .img-user .title p {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12.19px;
+}
+.section-decoration .img-user .text-description {
+  margin-block-start: 20px;
+  margin-inline-start: 19px;
+  max-inline-size: 210px;
+}
+.section-decoration .img-user .text-description h3 {
+  font-family: "Lora", serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.04px;
+}
+
+.footer {
+  margin-block-start: 150px;
+  margin-block-end: 24px;
+}
+.footer .attribution {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.04px;
+  text-align: center;
+}
+.footer .attribution a {
+  color: #a9a9a9;
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */
