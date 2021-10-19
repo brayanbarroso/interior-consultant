@@ -1,0 +1,126 @@
+:root {
+  --background: #181719;
+  --text: #ffffff;
+  --text2: #828282;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  max-inline-size: 1296px;
+  margin: auto;
+  padding-inline-start: 12px;
+  padding-inline-end: 12px;
+}
+
+.header .header-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 19px;
+}
+.header .header-content .logo {
+  border: 1px solid var(--text);
+  font-family: "Crimson Pro", serif;
+  font-size: 14px;
+  font-weight: 200;
+  height: 32px;
+  line-height: 15.56px;
+  text-transform: uppercase;
+  padding: 8px;
+}
+.header .header-content .menu {
+  display: none;
+}
+.header .header-content .menu ul {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  gap: 86px;
+  list-style: none;
+  line-height: 21.94px;
+}
+.header .header-content .menu ul a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    border: 1px solid red;
+  }
+  .header .header-content .menu {
+    display: block;
+  }
+}
+.menu-mobile .material-icons-outlined {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 34px;
+  display: inline-block;
+  line-height: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-mobile {
+    display: none;
+  }
+}
+.section {
+  margin-block-start: 38px;
+  margin-block-end: 60px;
+}
+.section .section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+}
+.section .section-content .section-description {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.section .section-content .section-description h1 {
+  font-family: "Lora", serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 46.08px;
+}
+.section .section-content .section-description p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+  inline-size: 250px;
+  max-inline-size: 250px;
+}
+.section .section-content .section-description a {
+  color: var(--text);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.07px;
+  text-decoration: none;
+}
+.section .section-content .section-description .material-icons-outlined {
+  border: 1px solid red;
+  display: inline;
+  font-family: "Material Icons";
+  font-size: 24px;
+  font-weight: bold;
+  margin-inline-start: 15px;
+}
+.section .section-content .section-decoration .img-interior img {
+  max-inline-size: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */

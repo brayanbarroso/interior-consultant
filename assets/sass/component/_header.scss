@@ -1,0 +1,51 @@
+.header {
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 19px;
+
+    .logo {
+      border: 1px solid var(--text);
+      font: {
+        family: "Crimson Pro", serif;
+        size: 14px;
+        weight: 200;
+      }
+      height: 32px;
+      line-height: 15.56px;
+      text-transform: uppercase;
+      padding: 8px;
+    }
+
+    .menu {
+      display: none;
+
+      ul {
+        font: {
+          size: 18px;
+          weight: 500;
+        }
+        display: flex;
+        gap: 86px;
+        list-style: none;
+        line-height: 21.94px;
+
+        a {
+          color: var(--text);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(min-width:768px) {
+  .header {
+    border: 1px solid red;
+    .header-content {
+      .menu {
+        display: block;
+      }
+    }
+  }
+}

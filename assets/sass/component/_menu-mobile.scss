@@ -1,0 +1,16 @@
+.menu-mobile {
+  .material-icons-outlined {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 34px;
+    display: inline-block;
+    line-height: 1;
+  }
+}
+
+@media only screen and(min-width:768px) {
+  .menu-mobile {
+    display: none;
+  }
+}
