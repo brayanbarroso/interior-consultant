@@ -43,21 +43,57 @@
       }
 
       .material-icons-outlined {
-        border: 1px solid red;
         display: inline;
         font-family: "Material Icons";
         font-size: 24px;
         font-weight: bold;
+        inset-block-start: 8px;
         margin-inline-start: 15px;
+        position: relative;
       }
     }
+  }
+}
 
-    .section-decoration {
-      .img-interior {
-        z-index: -1;
-        img {
-          max-inline-size: 100%;
-          height: auto;
+@media only screen and(min-width:768px) {
+  .section {
+    margin-block-start: 177px;
+    .section-content {
+      align-items: center;
+      flex-direction: row;
+    }
+  }
+}
+
+@media only screen and(min-width:1024px) {
+  .section {
+    .section-content {
+      gap: 139px;
+
+      .section-description {
+        gap: 40px;
+
+        h1 {
+          font: {
+            size: 48px;
+          }
+          line-height: 61.44px;
+        }
+
+        p {
+          font: {
+            size: 24px;
+          }
+          line-height: 29.26px;
+          inline-size: 410px;
+          max-inline-size: 410px;
+        }
+
+        a {
+          font: {
+            size: 18px;
+          }
+          line-height: 21.94px;
         }
       }
     }

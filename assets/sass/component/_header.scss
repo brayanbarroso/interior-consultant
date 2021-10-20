@@ -29,10 +29,18 @@
         gap: 86px;
         list-style: none;
         line-height: 21.94px;
-
+        li:hover {
+          border-bottom: 2px solid var(--text);
+          padding-block-end: 8px;
+        }
         a {
           color: var(--text);
           text-decoration: none;
+          padding-block-end: 8px;
+        }
+
+        a.is-active {
+          border-bottom: 2px solid var(--text);
         }
       }
     }
@@ -41,7 +49,7 @@
 
 @media only screen and(min-width:768px) {
   .header {
-    border: 1px solid red;
+    margin-block-start: 44px;
     .header-content {
       .menu {
         display: block;

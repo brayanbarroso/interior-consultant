@@ -49,14 +49,22 @@ body {
   list-style: none;
   line-height: 21.94px;
 }
+.header .header-content .menu ul li:hover {
+  border-bottom: 2px solid var(--text);
+  padding-block-end: 8px;
+}
 .header .header-content .menu ul a {
   color: var(--text);
   text-decoration: none;
+  padding-block-end: 8px;
+}
+.header .header-content .menu ul a.is-active {
+  border-bottom: 2px solid var(--text);
 }
 
 @media only screen and (min-width: 768px) {
   .header {
-    border: 1px solid red;
+    margin-block-start: 44px;
   }
   .header .header-content .menu {
     display: block;
@@ -112,67 +120,131 @@ body {
   text-decoration: none;
 }
 .section .section-content .section-description .material-icons-outlined {
-  border: 1px solid red;
   display: inline;
   font-family: "Material Icons";
   font-size: 24px;
   font-weight: bold;
+  inset-block-start: 8px;
   margin-inline-start: 15px;
+  position: relative;
 }
-.section .section-content .section-decoration .img-interior {
-  z-index: -1;
+
+@media only screen and (min-width: 768px) {
+  .section {
+    margin-block-start: 177px;
+  }
+  .section .section-content {
+    align-items: center;
+    flex-direction: row;
+  }
 }
-.section .section-content .section-decoration .img-interior img {
+@media only screen and (min-width: 1024px) {
+  .section .section-content {
+    gap: 139px;
+  }
+  .section .section-content .section-description {
+    gap: 40px;
+  }
+  .section .section-content .section-description h1 {
+    font-size: 48px;
+    line-height: 61.44px;
+  }
+  .section .section-content .section-description p {
+    font-size: 24px;
+    line-height: 29.26px;
+    inline-size: 410px;
+    max-inline-size: 410px;
+  }
+  .section .section-content .section-description a {
+    font-size: 18px;
+    line-height: 21.94px;
+  }
+}
+.section-decoration-img {
+  position: relative;
+}
+.section-decoration-img .img-interior img {
   max-inline-size: 100%;
   height: auto;
 }
-
-.section-decoration {
-  position: relative;
-}
-.section-decoration .img-user {
+.section-decoration-img .img-user {
   background: var(--background);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   inset-block-end: -100px;
-  inset-inline-start: 40px;
+  inset-inline-end: 20px;
   inline-size: 300px;
   padding-block-end: 25px;
   position: absolute;
 }
-.section-decoration .img-user .title {
+.section-decoration-img .img-user .title {
   display: flex;
   gap: 14px;
   margin-inline-start: 22.9px;
 }
-.section-decoration .img-user .title img {
+.section-decoration-img .img-user .title img {
   border-radius: 50%;
   margin-block-start: 14px;
   max-block-size: 36.59px;
   max-inline-size: 36.59px;
 }
-.section-decoration .img-user .title h4 {
+.section-decoration-img .img-user .title h4 {
   font-size: 12px;
   font-weight: 500;
   line-height: 14.63px;
   margin-block-start: 16px;
 }
-.section-decoration .img-user .title p {
+.section-decoration-img .img-user .title p {
   font-size: 10px;
   font-weight: 500;
   line-height: 12.19px;
 }
-.section-decoration .img-user .text-description {
+.section-decoration-img .img-user .text-description {
   margin-block-start: 20px;
   margin-inline-start: 19px;
   max-inline-size: 210px;
 }
-.section-decoration .img-user .text-description h3 {
+.section-decoration-img .img-user .text-description h3 {
   font-family: "Lora", serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 23.04px;
 }
 
+@media only screen and (min-width: 768px) {
+  .section-decoration-img .img-user {
+    inset-block-end: -130px;
+    inline-size: 410px;
+    padding-block-end: 34px;
+  }
+  .section-decoration-img .img-user .title {
+    gap: 19px;
+    margin-inline-start: 31px;
+  }
+  .section-decoration-img .img-user .title img {
+    margin-block-start: 18px;
+    max-block-size: 50px;
+    max-inline-size: 50px;
+  }
+  .section-decoration-img .img-user .title h4 {
+    font-size: 14px;
+    line-height: 17.07px;
+    margin-block-start: 23px;
+  }
+  .section-decoration-img .img-user .title p {
+    font-size: 12px;
+    line-height: 14.63px;
+    margin-block-start: 5px;
+  }
+  .section-decoration-img .img-user .text-description {
+    margin-block-start: 30px;
+    margin-inline-start: 26px;
+    max-inline-size: 287px;
+  }
+  .section-decoration-img .img-user .text-description h3 {
+    font-size: 24px;
+    line-height: 30.72px;
+  }
+}
 .footer {
   margin-block-start: 150px;
   margin-block-end: 24px;
