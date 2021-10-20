@@ -18,31 +18,7 @@
     }
 
     .menu {
-      display: none;
-
-      ul {
-        font: {
-          size: 18px;
-          weight: 500;
-        }
-        display: flex;
-        gap: 86px;
-        list-style: none;
-        line-height: 21.94px;
-        li:hover {
-          border-bottom: 2px solid var(--text);
-          padding-block-end: 8px;
-        }
-        a {
-          color: var(--text);
-          text-decoration: none;
-          padding-block-end: 8px;
-        }
-
-        a.is-active {
-          border-bottom: 2px solid var(--text);
-        }
-      }
+      display: block;
     }
   }
 }
@@ -53,6 +29,31 @@
     .header-content {
       .menu {
         display: block;
+
+        ul {
+          font: {
+            size: 18px;
+            weight: 500;
+          }
+          display: flex;
+          gap: 86px;
+          list-style: none;
+          line-height: 21.94px;
+          li:hover {
+            border-bottom: 2px solid var(--text);
+            padding-block-end: 8px;
+          }
+          a {
+            color: var(--text);
+            text-decoration: none;
+            padding-block-end: 8px;
+          }
+
+          a.is-active {
+            border-bottom: 2px solid var(--text);
+            font-weight: bold;
+          }
+        }
       }
     }
   }
