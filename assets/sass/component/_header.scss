@@ -29,20 +29,23 @@
     .header-content {
       .menu {
         display: block;
+        padding-block-start: 0;
+        position: static;
+        opacity: 1;
+        transform: translateY(0);
+        transition: none;
 
         ul {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: row;
           font: {
             size: 18px;
             weight: 500;
           }
-          display: flex;
           gap: 86px;
-          list-style: none;
           line-height: 21.94px;
-          li:hover {
-            border-bottom: 2px solid var(--text);
-            padding-block-end: 8px;
-          }
+
           a {
             color: var(--text);
             text-decoration: none;
