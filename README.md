@@ -13,4 +13,4 @@ Interior Consultant Challenger
 
 <img src="./assets/design/Design-desktop.png" alt="Diseño reto interior consultant"/>
 
-<img src="./assets/Design/design-mobile.png" alt="Diseño reto interior consultant"/>
+<img src="./assets/design/Design-mobile.png" alt="Diseño reto interior consultant"/>
